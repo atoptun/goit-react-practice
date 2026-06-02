@@ -17,7 +17,7 @@ export const Alert = ({
   children,
 }: AlertProps) => {
   return (
-    <p
+    <div
       className={clsx(
         styles.alert,
         styles[level], 
@@ -31,6 +31,6 @@ export const Alert = ({
     >
       <IoMdAlert className={styles.icon} size={24} />
       {children}
-    </p>
+    </div>
   );
 };
