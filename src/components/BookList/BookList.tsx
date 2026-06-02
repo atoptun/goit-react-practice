@@ -3,7 +3,7 @@ export type Book = {
   title: string;
 };
 
-type BookProps = Omit<Book, "id">;
+type BookProps = Omit<Book, 'id'>;
 
 type BookListProps = {
   books: Book[];
@@ -12,14 +12,13 @@ type BookListProps = {
 export default function BookList({ books }: BookListProps) {
   return (
     <ul>
-      {books.map((book) => (
+      {books.map(book => (
         <Book key={book.id} {...book} />
       ))}
     </ul>
   );
-};
+}
 
 function Book({ title }: BookProps) {
   return <li>{title}</li>;
-};
-
+}

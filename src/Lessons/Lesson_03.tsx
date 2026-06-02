@@ -1,9 +1,9 @@
-import { useState } from "react";
-import MessageButton from "@components/MessageButton/MessageButton";
-import clsx from "clsx";
-import ClickCounter from "@components/ClickCounter/ClickCounter";
-import ClickCounterShared from "@/components/ClickCounterShared/ClickCounterShared";
-import ObjectClicker from "@components/ObjectClicker/ObjectClicker";
+import { useState } from 'react';
+import MessageButton from '@components/MessageButton/MessageButton';
+import clsx from 'clsx';
+import ClickCounter from '@components/ClickCounter/ClickCounter';
+import ClickCounterShared from '@/components/ClickCounterShared/ClickCounterShared';
+import ObjectClicker from '@components/ObjectClicker/ObjectClicker';
 
 export default function Lesson_03({ hidden = false }) {
   const [clicks, setClicks] = useState(0);
@@ -13,21 +13,20 @@ export default function Lesson_03({ hidden = false }) {
 
   const [isOpen, setIsOpen] = useState(true);
   const handleCountClick = () => {
-    setClicks((prev) => prev + 1);
+    setClicks(prev => prev + 1);
   };
-  
+
   const handleToggle = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(prev => !prev);
   };
 
   const [sharedCounter, setSharedCounter] = useState(0);
   const handleSharedCounterClick = () => {
-    setSharedCounter((prev) => prev + 1);
-  };  
-
+    setSharedCounter(prev => prev + 1);
+  };
 
   return (
-    <div className={clsx("lesson-03", { hidden: hidden })}>
+    <div className={clsx('lesson-03', { hidden: hidden })}>
       <h1>Lesson 03</h1>
       <button onClick={handleLogClick}>Click me - see log</button>
       <br />
@@ -41,7 +40,7 @@ export default function Lesson_03({ hidden = false }) {
       <br />
       <button onClick={handleCountClick}>Clicks: {clicks}</button>
       <br />
-      <button onClick={handleToggle}>{isOpen ? "Hide" : "Show"}</button>
+      <button onClick={handleToggle}>{isOpen ? 'Hide' : 'Show'}</button>
       {isOpen && <p>Now you can see me!</p>}
       <br />
       <p>Independent counters:</p>
