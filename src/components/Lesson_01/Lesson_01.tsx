@@ -1,6 +1,6 @@
-import Product from '@components/Product/Product';
-import Mailbox from '@components/MailBox/Maibox';
-import BookList, { type Book } from '@components/BookList/BookList';
+import Product from '@/components/Lesson_01/Product/Product';
+import Mailbox from '@/components/Lesson_01/MailBox/Maibox';
+import BookList, { type Book } from '@/components/Lesson_01/BookList/BookList';
 
 type Lesson_01Props = {
   hidden?: boolean;

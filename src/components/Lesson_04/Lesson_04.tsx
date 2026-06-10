@@ -1,4 +1,4 @@
-import Modal from '@/components/Modal/Modal';
+import Modal from '@/components/Lesson_04/Modal/Modal';
 import clsx from 'clsx';
 import { useState, useEffect } from 'react';
 

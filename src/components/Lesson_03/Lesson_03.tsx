@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import MessageButton from '@components/MessageButton/MessageButton';
+import MessageButton from '@/components/Lesson_03/MessageButton/MessageButton';
 import clsx from 'clsx';
-import ClickCounter from '@components/ClickCounter/ClickCounter';
-import ClickCounterShared from '@/components/ClickCounterShared/ClickCounterShared';
-import ObjectClicker from '@components/ObjectClicker/ObjectClicker';
+import ClickCounter from '@/components/Lesson_03/ClickCounter/ClickCounter';
+import ClickCounterShared from '@/components/Lesson_03/ClickCounterShared/ClickCounterShared';
+import ObjectClicker from '@/components/Lesson_03/ObjectClicker/ObjectClicker';
 
 export default function Lesson_03({ hidden = false }) {
   const [clicks, setClicks] = useState(0);

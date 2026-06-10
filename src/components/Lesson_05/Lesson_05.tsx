@@ -1,21 +1,20 @@
-import clsx from "clsx";
-import { useState } from "react";
+import clsx from 'clsx';
+import { useState } from 'react';
 
-import LoginForm, { type LoginUserData } from '../components/LoginForm/LoginForm'
-import SearchBar from "@/components/SearchBar/SearchBar";
-import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
-import Cofee from "@/components/Cofee/Cofee";
-import Term from "@/components/Term/Term";
-import LoginForm2 from "@/components/LoginForm2/LoginForm2";
+import LoginForm, { type LoginUserData } from './LoginForm/LoginForm';
+import SearchBar from '@/components/Lesson_05/SearchBar/SearchBar';
+import LangSwitcher from '@/components/Lesson_05/LangSwitcher/LangSwitcher';
+import Cofee from '@/components/Lesson_05/Cofee/Cofee';
+import Term from '@/components/Lesson_05/Term/Term';
+import LoginForm2 from '@/components/Lesson_05/LoginForm2/LoginForm2';
 
 export default function Lesson_05({ hidden = false }) {
-  const [lang, setLang] = useState('uk')
+  const [lang, setLang] = useState('uk');
 
   const handleLogin = (userData: LoginUserData) => {
     // Виконуємо необхідні операції з даними
     console.log(userData);
   };
-
 
   return (
     <div className={clsx('lesson-05', { hidden: hidden })}>

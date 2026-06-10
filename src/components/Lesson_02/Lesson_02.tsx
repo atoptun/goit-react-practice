@@ -1,4 +1,4 @@
-import { Alert } from '@components/Alert/Alert';
+import { Alert } from '@/components/Lesson_02/Alert/Alert';
 
 type Lesson_02Props = {
   hidden?: boolean;
