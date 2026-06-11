@@ -19,6 +19,7 @@ export default function Lesson_05({ hidden = false }) {
   return (
     <div className={clsx('lesson-05', { hidden: hidden })}>
       <h1>Lesson_05</h1>
+      <hr />
       <h2>Please login to your account!</h2>
       <LoginForm onLogin={handleLogin} />
       <SearchBar />

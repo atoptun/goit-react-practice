@@ -1,21 +1,26 @@
-import Lesson_01 from '@/components/Lesson_01/Lesson_01';
-import Lesson_02 from '@/components/Lesson_02/Lesson_02';
-import Lesson_03 from '@/components/Lesson_03/Lesson_03';
-import Lesson_04 from '@/components/Lesson_04/Lesson_04';
-import Lesson_05 from '@/components/Lesson_05/Lesson_05';
-
+import { lazy, Suspense } from 'react';
 import './App.css';
-import Lesson_06 from '../Lesson_06/Lesson_06';
+
+const Lesson_01 = lazy(() => import('../Lesson_01/Lesson_01'));
+const Lesson_02 = lazy(() => import('../Lesson_02/Lesson_02'));
+const Lesson_03 = lazy(() => import('../Lesson_03/Lesson_03'));
+const Lesson_04 = lazy(() => import('../Lesson_04/Lesson_04'));
+const Lesson_05 = lazy(() => import('../Lesson_05/Lesson_05'));
+const Lesson_06 = lazy(() => import('../Lesson_06/Lesson_06'));
+const Lesson_07 = lazy(() => import('../Lesson_07/Lesson_07'));
 
 function App() {
   return (
     <div>
-      <Lesson_01 hidden />
-      <Lesson_02 hidden />
-      <Lesson_03 hidden />
-      <Lesson_04 hidden />
-      <Lesson_05 hidden />
-      <Lesson_06 />
+      <Suspense fallback={<div>Loading lesson...</div>}>
+        {[].length !== 0 ? <Lesson_02 hidden /> : null}
+        {[].length !== 0 ? <Lesson_01 hidden /> : null}
+        {[].length !== 0 ? <Lesson_03 hidden /> : null}
+        {[].length !== 0 ? <Lesson_04 hidden /> : null}
+        {[].length !== 0 ? <Lesson_05 hidden /> : null}
+        {[].length !== 0 ? <Lesson_06 hidden /> : null}
+        {[].length === 0 ? <Lesson_07 /> : null}
+      </Suspense>
     </div>
   );
 }

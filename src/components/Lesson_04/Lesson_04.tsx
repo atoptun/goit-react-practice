@@ -37,7 +37,7 @@ export default function Lesson_04({ hidden = false }) {
   return (
     <div className={clsx('lesson-04', { hidden: hidden })}>
       <h1>Lesson 04</h1>
-
+      <hr />
       <button type="button" onClick={() => setClicks((prev: number) => prev + 1)}>
         You clicked {clicks} times
       </button>

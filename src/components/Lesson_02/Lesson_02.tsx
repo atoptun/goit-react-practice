@@ -9,7 +9,8 @@ export default function Lesson_02({ hidden = false }: Lesson_02Props) {
   return (
     <div className={clsx('lesson-02', { hidden: hidden })}>
       <h1>Lesson 02</h1>
-
+      <hr />
+      
       <Alert level="info" elevated>
         <h2>Welcome to our store!</h2>
         <p>Check out our latest products and offers.</p>

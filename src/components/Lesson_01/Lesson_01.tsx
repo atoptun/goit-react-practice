@@ -23,6 +23,7 @@ export default function Lesson_01({ hidden = false }: Lesson_01Props) {
   return (
     <div className={clsx('lesson-01', { hidden: hidden })}>
       <h1>Lesson 01</h1>
+      <hr />
 
       <h2>Book List</h2>
       <BookList books={books} />

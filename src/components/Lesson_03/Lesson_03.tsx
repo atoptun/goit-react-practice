@@ -28,6 +28,7 @@ export default function Lesson_03({ hidden = false }) {
   return (
     <div className={clsx('lesson-03', { hidden: hidden })}>
       <h1>Lesson 03</h1>
+      <hr />
       <button onClick={handleLogClick}>Click me - see log</button>
       <br />
       <button onClick={() => alert("I'm a button inline!")}>
