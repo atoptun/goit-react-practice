@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { Alert } from '@/components/Lesson_02/Alert/Alert';
 
 type Lesson_02Props = {
@@ -6,7 +7,7 @@ type Lesson_02Props = {
 
 export default function Lesson_02({ hidden = false }: Lesson_02Props) {
   return (
-    <div className={hidden ? 'hidden' : ''}>
+    <div className={clsx('lesson-02', { hidden: hidden })}>
       <h1>Lesson 02</h1>
 
       <Alert level="info" elevated>

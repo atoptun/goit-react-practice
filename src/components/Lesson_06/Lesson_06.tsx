@@ -1,6 +1,13 @@
-function Lesson_06() {
+import clsx from 'clsx';
+import FeedbackForm from './FeedbackForm/FeedbackForm';
+
+function Lesson_06({ hidden = false }) {
   return (
-    <h2>Lesson_06</h2>
-  )
+    <div className={clsx('lesson-06', { hidden: hidden })}>
+      <h1>Lesson_06</h1>
+      <FeedbackForm />
+    </div>
+  );
 }
-export default Lesson_06
+
+export default Lesson_06;

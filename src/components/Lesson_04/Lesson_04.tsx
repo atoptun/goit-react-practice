@@ -8,14 +8,14 @@ export default function Lesson_04({ hidden = false }) {
   });
 
   useEffect(() => {
-    document.title = `Clicks: ${clicks}`;
-    console.log(`Clicks: `, clicks);
+    // document.title = `Clicks: ${clicks}`;
+    // console.log(`Clicks: `, clicks);
   }, [clicks]);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    document.title = `You clicked ${clicks} times`;
+    // document.title = `You clicked ${clicks} times`;
   });
 
   useEffect(() => {
@@ -23,14 +23,14 @@ export default function Lesson_04({ hidden = false }) {
   }, [clicks]);
 
   useEffect(() => {
-    console.log('You can see me only once!');
+    // console.log('You can see me only once!');
   }, []);
 
   useEffect(() => {
-    console.log('Effect');
+    // console.log('Effect');
 
     return () => {
-      console.log('Clean up');
+      // console.log('Clean up');
     };
   }, []);
 

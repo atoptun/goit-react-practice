@@ -1,3 +1,4 @@
+import { clsx } from 'clsx';
 import Product from '@/components/Lesson_01/Product/Product';
 import Mailbox from '@/components/Lesson_01/MailBox/Maibox';
 import BookList, { type Book } from '@/components/Lesson_01/BookList/BookList';
@@ -20,7 +21,7 @@ export default function Lesson_01({ hidden = false }: Lesson_01Props) {
   ];
 
   return (
-    <div className={hidden ? 'hidden' : ''}>
+    <div className={clsx('lesson-01', { hidden: hidden })}>
       <h1>Lesson 01</h1>
 
       <h2>Book List</h2>
