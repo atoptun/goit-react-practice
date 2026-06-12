@@ -10,7 +10,11 @@
   gap: 4px;
 }
 
-.error {
+.errorField {
+  border: 1px solid red;
+}
+
+.errorMessage {
   color: red;
   font-size: 12px;
 }

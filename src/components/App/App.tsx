@@ -13,12 +13,12 @@ function App() {
   return (
     <div>
       <Suspense fallback={<div>Loading lesson...</div>}>
-        {[].length !== 0 ? <Lesson_02 hidden /> : null}
-        {[].length !== 0 ? <Lesson_01 hidden /> : null}
-        {[].length !== 0 ? <Lesson_03 hidden /> : null}
-        {[].length !== 0 ? <Lesson_04 hidden /> : null}
-        {[].length !== 0 ? <Lesson_05 hidden /> : null}
-        {[].length !== 0 ? <Lesson_06 hidden /> : null}
+        {[].length !== 0 ? <Lesson_02 /> : null}
+        {[].length !== 0 ? <Lesson_01 /> : null}
+        {[].length !== 0 ? <Lesson_03 /> : null}
+        {[].length !== 0 ? <Lesson_04 /> : null}
+        {[].length !== 0 ? <Lesson_05 /> : null}
+        {[].length !== 0 ? <Lesson_06 /> : null}
         {[].length === 0 ? <Lesson_07 /> : null}
       </Suspense>
     </div>
