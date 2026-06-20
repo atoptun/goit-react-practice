@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import './App.css';
+import Lesson_08 from '../Lesson_08/Lesson_08';
 
 const Lesson_01 = lazy(() => import('../Lesson_01/Lesson_01'));
 const Lesson_02 = lazy(() => import('../Lesson_02/Lesson_02'));
@@ -19,7 +20,8 @@ function App() {
         {[].length !== 0 ? <Lesson_04 /> : null}
         {[].length !== 0 ? <Lesson_05 /> : null}
         {[].length !== 0 ? <Lesson_06 /> : null}
-        {[].length === 0 ? <Lesson_07 /> : null}
+        {[].length !== 0 ? <Lesson_07 /> : null}
+        {[].length === 0 ? <Lesson_08 /> : null}
       </Suspense>
     </div>
   );
