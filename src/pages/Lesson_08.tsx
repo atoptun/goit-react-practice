@@ -1,10 +1,10 @@
 import { forwardRef, useEffect, useRef, useState } from 'react';
-import MemoExample from './MemoExample/MemoExample';
-import VideoPlayer from './VideoPlayer/VideoPlayer';
-import ComponentA from './ComponentA/ComponentA';
-import FirstLevel from './FirstLevel/FirstLevel';
-import { counterContext } from './counterContext.ts';
-import UserProvider from './UserProvider/UserProvider.tsx';
+import MemoExample from '@/components/Lesson_08/MemoExample/MemoExample';
+import VideoPlayer from '@/components/Lesson_08/VideoPlayer/VideoPlayer';
+import ComponentA from '@/components/Lesson_08/ComponentA/ComponentA';
+import FirstLevel from '@/components/Lesson_08/FirstLevel/FirstLevel';
+import { counterContext } from '@/components/Lesson_08/counterContext.ts';
+import UserProvider from '@/components/Lesson_08/UserProvider/UserProvider.tsx';
 
 const counterObj = {
   counter: 0,

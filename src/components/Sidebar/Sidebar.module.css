@@ -1,0 +1,10 @@
+
+.sidebar {
+  max-width: 250px;
+  min-height: 100%;
+  padding: 20px;
+
+  background-color: #1e293b;
+  color: antiquewhite;
+
+}

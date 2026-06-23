@@ -1,0 +1,26 @@
+.gridContainer {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+  overflow: hidden;
+}
+
+.sidebarZone {
+  grid-area: sidebar;
+  overflow-y: auto;
+}
+
+.headerZone {
+  grid-area: header;
+}
+
+.mainZone {
+  grid-area: main;
+  overflow-y: auto;
+  height: 100%;
+}

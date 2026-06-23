@@ -1,4 +1,5 @@
 import { useId } from 'react';
+import styles from './LoginForm.module.css'
 
 export type LoginUserData = { login: string; password: string };
 export type LoginCallback = (userData: LoginUserData) => void;
@@ -24,7 +25,7 @@ export default function LoginForm({ onLogin }: LoginFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.loginForm}>
       <label htmlFor={loginId}>Login</label>
       <input type="text" name="login" id={loginId} />
 

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import FeedbackForm, {
   type FeedbackFormValues,
-} from './FeedbackForm/FeedbackForm';
+} from '@/components/Lesson_06/FeedbackForm/FeedbackForm';
 
 function Lesson_06({ hidden = false }) {
   const handleSubmit = (values: FeedbackFormValues) => {

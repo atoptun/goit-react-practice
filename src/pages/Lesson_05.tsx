@@ -1,7 +1,9 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 
-import LoginForm, { type LoginUserData } from './LoginForm/LoginForm';
+import LoginForm, {
+  type LoginUserData,
+} from '@/components/Lesson_05/LoginForm/LoginForm';
 import SearchBar from '@/components/Lesson_05/SearchBar/SearchBar';
 import LangSwitcher from '@/components/Lesson_05/LangSwitcher/LangSwitcher';
 import Cofee from '@/components/Lesson_05/Cofee/Cofee';
@@ -22,10 +24,15 @@ export default function Lesson_05({ hidden = false }) {
       <hr />
       <h2>Please login to your account!</h2>
       <LoginForm onLogin={handleLogin} />
+      <hr />
       <SearchBar />
+      <hr />
       <LangSwitcher value={lang} onSelect={setLang} />
+      <hr />
       <Cofee />
+      <hr />
       <Term />
+      <hr />
       <LoginForm2 />
     </div>
   );

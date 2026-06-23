@@ -1,11 +1,11 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 
-import { fetchArticlesWithTopic } from './article-api';
-import ArticleList from './ArticleList/ArticleList';
-import SearchForm from './SearchForm/SearchForm';
-import Loader from './Loader/Loader';
-import Error from './Error/Error';
+import { fetchArticlesWithTopic } from '@/components/Lesson_07/article-api';
+import ArticleList from '@/components/Lesson_07/ArticleList/ArticleList';
+import SearchForm from '@/components/Lesson_07/SearchForm/SearchForm';
+import Loader from '@/components/Lesson_07/Loader/Loader';
+import Error from '@/components/Lesson_07/Error/Error';
 
 function Lesson_07({ hidden = false }) {
   const [articles, setArticles] = useState([]);
