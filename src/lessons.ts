@@ -42,10 +42,18 @@ const LESSONS_LIST = [
     id: 9,
     title: 'React Router library',
   },
-  // {
-  //   id: 10,
-  //   title: 'Formik library',
-  // },
+  {
+    id: 10,
+    title: 'Separate code',
+  },
+  {
+    id: 11,
+    title: 'Redux. Base concepts',
+  },
+  {
+    id: 12,
+    title: 'Redux Toolkit',
+  },
 ];
 
 export const LESSONS: Lesson[] = LESSONS_LIST.map((lesson) => ({
