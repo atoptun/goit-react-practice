@@ -2,7 +2,7 @@ import type { TaskInterface, AppState, FilterValue } from '@/types';
 import Task from '../Task/Task';
 import styles from './TaskList.module.css';
 import { useSelector } from 'react-redux';
-import { getStatusFilter, getTasks } from '@/redux/selectors';
+import { selectStatusFilter, selectTasks } from '@/redux/selectors';
 
 const getVisibleTasks = (
   tasks: TaskInterface[],
@@ -19,8 +19,8 @@ const getVisibleTasks = (
 };
 
 function TaskList() {
-  const tasks = useSelector(getTasks);
-  const statusFilter = useSelector(getStatusFilter);
+  const tasks = useSelector(selectTasks);
+  const statusFilter = useSelector(selectStatusFilter);
 
   const visibleTasks = getVisibleTasks(tasks, statusFilter);
 

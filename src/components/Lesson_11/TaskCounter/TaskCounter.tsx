@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import type { TaskInterface } from '@/types';
-import { getTasks } from '@/redux/selectors';
+import { selectTasks } from '@/redux/selectors';
 import styles from './TaskCounter.module.css';
 
 interface TaskCounterInterface {
@@ -9,7 +9,7 @@ interface TaskCounterInterface {
 }
 
 function TaskCounter() {
-  const tasks = useSelector(getTasks);
+  const tasks = useSelector(selectTasks);
 
   const count: TaskCounterInterface = tasks.reduce(
     (acc: TaskCounterInterface, task: TaskInterface) => {

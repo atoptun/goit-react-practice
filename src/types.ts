@@ -19,4 +19,18 @@ export interface FilterState {
 export interface AppState {
   tasks: TasksState;
   filters: FilterState;
+  remoteTasks: RemoteTasksState;
+}
+
+// Lesson 13
+
+export interface RemoteTasksState {
+  items: RemoteTaskInterface[];
+}
+
+export interface RemoteTaskInterface {
+  id: string;
+  text: string;
+  completed: boolean;
+  createdAt: number;
 }
