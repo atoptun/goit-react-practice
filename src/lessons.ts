@@ -58,6 +58,10 @@ const LESSONS_LIST = [
     id: 13,
     title: 'Redux Async',
   },
+  {
+    id: 14,
+    title: 'useReducer',
+  },
 ];
 
 export const LESSONS: Lesson[] = LESSONS_LIST.map((lesson) => ({
